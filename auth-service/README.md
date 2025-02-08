@@ -31,6 +31,23 @@ source .venv/bin/activate  # For Unix
 ```bash
 uv pip install -r requirements.txt
 ```
+4. Set up pre-commit hooks:
+```bash
+pre-commit install
+```
+
+## Development
+
+### Pre-commit Hooks
+
+This project uses pre-commit hooks to ensure code quality. The hooks include:
+- Code formatting with black
+- Type checking with mypy
+
+To run the hooks manually:
+```bash
+pre-commit run --all-files
+```
 
 ## Deployment
 
